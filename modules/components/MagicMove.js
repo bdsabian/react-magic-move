@@ -1,6 +1,6 @@
 /* @jsx React.DOM */
 var React = require('react');
-var cloneWithProps = require('react/lib/cloneWithProps');
+var cloneElement =  React.cloneElement;
 
 var Clones = React.createClass({
   displayName: 'MagicMoveClones',
@@ -10,7 +10,7 @@ var Clones = React.createClass({
     React.Children.forEach(this.props.children, (child) => {
       var style = this.props.positions[child.key];
       var key = child.key;
-      children.push(cloneWithProps(child, { style, key }));
+      children.push(cloneElement(child, {style}));
     });
     return children.sort(function (a, b) {
       return (a.key < b.key) ? -1 : (a.key > b.key) ? 1 : 0;
@@ -127,7 +127,7 @@ var MagicMove = React.createClass({
 
   childrenWithRefs () {
     return React.Children.map(this.props.children, (child) => {
-      return cloneWithProps(child, { ref: child.key});
+      return cloneElement(child, { ref: child.key});
     });
   },
 
