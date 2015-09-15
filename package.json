@@ -1,14 +1,14 @@
 {
   "name": "react-magic-move",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MagicMove for React.js",
   "main": "./modules/index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rpflorence/react-magic-move.git"
+    "url": "https://github.com/imeetyouat/react-magic-move.git"
   },
-  "homepage": "https://github.com/rpflorence/react-magic-move/blob/latest/README.md",
-  "bugs": "https://github.com/rpflorence/react-magic-move/issues",
+  "homepage": "https://github.com/imeetyouat/react-magic-move/blob/latest/README.md",
+  "bugs": "https://github.com/imeetyouat/react-magic-move/issues",
   "directories": {
     "example": "examples"
   },
@@ -20,12 +20,12 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "browserify": "4.2.3",
-    "browserify-shim": "^3.8.0",
-    "bundle-loader": "0.5.1",
-    "envify": "1.2.0",
-    "jsx-loader": "0.12.0",
-    "react": "0.12.x",
+    "browserify": "11.1.0",
+    "browserify-shim": "^3.8.10",
+    "bundle-loader": "0.5.4",
+    "envify": "3.4.0",
+    "jsx-loader": "0.13.2",
+    "react": "0.14.x",
     "reactify": "^0.17.1",
     "rf-release": "0.4.0",
     "uglify-js": "^2.4.15",
